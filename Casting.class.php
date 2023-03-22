@@ -12,6 +12,7 @@ class Casting {
         $this->_film=$film;
         $this->_acteur->addFilmActeur($this);
         $this->_role->addFilmRole($this);
+        $this->_film->addFilmCasting($this);
     }
     
 
@@ -51,7 +52,6 @@ class Casting {
         return $this;
     }
 
-    
 
 }
 

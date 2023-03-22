@@ -63,4 +63,5 @@ echo $a1->getFilmActeur();
 echo $a2->getFilmActeur();
 echo $a3->getFilmActeur();
 echo $O1->getRole();
+echo $f1->getFilmCasting();
 ?>

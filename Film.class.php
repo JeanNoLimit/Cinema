@@ -102,10 +102,23 @@ class Film {
         $dateT= DateTime::createFromFormat('d/m/Y', $date);
         return $dateT->format('Y');
     }
-
+// Pour l'affichage d'un film. On veut toujours afficher son année (Pour gerer l'eventualité de 2 films ayant le même titre)
     public function __toString(){
         return $this->get_titre()." (".$this->getAnne().")<br>";
     }
+// Fonction pour ajouter le casting complet d'un film
+    public function addFilmCasting(Casting $casting){
+        return $this->_listeCasting[]=$casting;
+    }
+
+    public function getFilmCasting(){
+        $result="<h4> Casting du film :" . $this. "</h4>";
+        foreach ($this->_listeCasting as $casting){
+            $result.=$casting->get_role(). " à été incarné par : " . $casting->get_acteur(). "<br>";
+        }
+        return $result;
+    }
+
 
 }
 
