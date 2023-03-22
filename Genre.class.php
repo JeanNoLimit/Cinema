@@ -23,15 +23,17 @@ class Genre {
 
         return $this;
     }
-    //methode toString pour l'affichage du genre
-    public function __toString(){
-        return "<h3>Genre :". $this->get_nomGenre(). "</h3>";
-    }
+    
     // methode pour récupérer la liste des films du genre
     public function addFilm(Film $film){
         $this->_listeFilms[]=$film;
     }
 
+
+//methode toString pour l'affichage du genre
+    public function __toString(){
+        return "<h3>Genre : ". $this->get_nomGenre(). " -> ".count($this->_listeFilms)." films</h3>";
+    }
     //méthode d'affiche de la liste des films d'un genre donné :
     public function getGenre(){
         $result=$this;
