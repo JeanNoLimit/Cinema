@@ -59,5 +59,8 @@ $PL2=new Casting($a3,$O3,$f5);
 echo $g2->getGenre();
 echo $g3->getGenre();
 echo $r2->getFilmReal();
-
+echo $a1->getFilmActeur();
+echo $a2->getFilmActeur();
+echo $a3->getFilmActeur();
+echo $O1->getRole();
 ?>

@@ -96,7 +96,7 @@ class Film {
 
         return $this;
     }
-
+//fonction qui récupère l'année de sortie du film pour l'affichage.
     public function getAnne(){
         $date=$this->get_date();
         $dateT= DateTime::createFromFormat('d/m/Y', $date);
@@ -104,7 +104,7 @@ class Film {
     }
 
     public function __toString(){
-        return $this->get_titre()." (".$this->getAnne()." )<br>";
+        return $this->get_titre()." (".$this->getAnne().")<br>";
     }
 
 }

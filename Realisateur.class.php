@@ -17,7 +17,7 @@ class Realisateur extends Personne{
     }
 
     public function __toString(){
-        return "<h3> filmographie de réalisateur ".$this->getNom()." ".$this->getPrenom(). " : </h3><br>"; 
+        return "<h3> filmographie de réalisateur ".$this->getNom()." ".$this->getPrenom(). " : </h3>"; 
     } 
 
     public function addFilm(Film $film){
