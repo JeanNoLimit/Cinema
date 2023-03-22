@@ -30,6 +30,7 @@ class Acteur extends Personne {
     public function getFilmActeur(){
         $result="<h3> filmographie de l'acteur ".$this .  " : </h3>";
         foreach($this->_listeCasting as $casting){
+            //on appele les fonctions de la class Casting
             $result.=$casting->get_film()."<br>";
         }
         return $result;

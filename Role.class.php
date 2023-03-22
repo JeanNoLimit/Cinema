@@ -26,7 +26,7 @@ class Role {
     }
 // Pour gérer l'affichage les acteurs ayant incarné un rôle précis
     public function getRole(){
-        $result="<h4>Les acteurs ayant joué le rôle de". $this."</h4>";
+        $result="<h3>Les acteurs ayant joué le rôle de ". $this."</h3>";
         foreach($this->_listeCasting as $casting){
             $result.=$casting->get_acteur()." dans ".$casting->get_film()."<br>";
         }

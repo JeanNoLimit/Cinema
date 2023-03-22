@@ -112,7 +112,7 @@ class Film {
     }
 
     public function getFilmCasting(){
-        $result="<h4> Casting du film :" . $this. "</h4>";
+        $result="<h3> Casting du film :" . $this. "</h3>";
         foreach ($this->_listeCasting as $casting){
             $result.=$casting->get_role(). " à été incarné par : " . $casting->get_acteur(). "<br>";
         }
